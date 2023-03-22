@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  front:
+    image: node:18.3-alpine
+    user: node
+    ports:
+      - 24678:3000
+    volumes:
+      - ./:/project
+    working_dir: /project
+    command: [ npm, run, dev ]
