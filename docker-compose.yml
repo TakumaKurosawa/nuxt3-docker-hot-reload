@@ -5,7 +5,7 @@ services:
     image: node:18.3-alpine
     user: node
     ports:
-      - 24678:3000
+      - 24678:3000 # 3000:3000となっていると、HMRが走らない。 https://github.com/nuxt/nuxt/issues/12748#issuecomment-1397234516
     volumes:
       - ./:/project
     working_dir: /project
