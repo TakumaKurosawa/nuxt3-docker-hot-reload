@@ -34,4 +34,16 @@ Temporary Items
 # iCloud generated files
 *.icloud
 
+### Node ###
+node_modules
+*.log*
+
+### Nuxt ###
+.nuxt
+.nitro
+.cache
+.output
+.env
+dist
+
 # End of https://www.toptal.com/developers/gitignore/api/macos
